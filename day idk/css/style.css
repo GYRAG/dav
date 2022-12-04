@@ -1,0 +1,118 @@
+@font-face {
+	font-family: 'ALK Life';
+	src: url('../fonts/alk-life-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+
+}
+
+@font-face {
+	font-family: 'BPG Nino Mtavruli Bold';
+	src: url('../fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+
+}
+
+body {
+	background-image: url(../img/download.jpeg);
+	font-family: 'BPG Nino Mtavruli Bold';
+	
+}
+
+.title {
+  text-align: center;
+  text-decoration: none;
+  font-size: 64px;
+  letter-spacing: 3px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #2b2ba0;
+  }
+  25% {
+    color: #0800ff;
+  }
+  50% {
+    color: #1ce61c;
+  }
+  75% {
+    color: #cb1972;
+  }
+  100% {
+    color: #3434e1;
+  }
+}
+
+.s-title {
+	text-align: center;
+	font-size: 42px;
+	background-color: transparent;
+	border-radius: 30px;
+	color: #000;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.s-title:hover {
+	color: #fff;
+  text-shadow: 0 0 5px #882291,
+              0 0 10px #882291,
+              0 0 20px #882291,
+              0 0 40px #882291;
+}
+
+
+
+.text{
+  animation: flipX 1.5s  infinite;
+	animation: flipY 3.5s infinite;
+	animation-delay: 1s;
+	text-align: center;
+
+}
+
+@keyframes flipX {
+  0%,80% { 
+		transform: rotateX(360deg)
+  }
+}
+
+@keyframes flipY {
+  0%,40% { 
+		transform: rotateY(360deg)
+  }
+}
+
+h4::first-letter {
+	color: red;
+}
+
+.link {
+ color: red;
+ text-align: center;
+ display: block;
+ text-decoration: none;
+ cursor: pointer;
+ font-size: 128px;
+ transition: 1s;
+
+}
+ .link:visited {
+	color: black;
+ }
+
+ .link:hover {
+	color: red;
+ }
+
+ .lorem {
+	font-family: 'ALK Life';
+	text-align: justify;
+	text-indent: -5%;
+	width: 400px;
+	margin: 5px 10px 20px 40px;
+	border-color: red;
+	border-style: dotted;
+	border-width: 20px;
+	border-radius: 0px;
+	padding: 20px;
+ }
